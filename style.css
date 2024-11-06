@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Fraunces', serif;
+	background-color: hsl(30, 38%, 92%);
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+	background-color: hsl(0, 0%, 100%);
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+#product {
+	width: 100%;
+}
+
+.content {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	margin-bottom: 10px;
+}
+
+.content #product {
+	font-weight: bold;
+	font-size: 14px;
+	letter-spacing: 2px;
+	color: hsl(228, 12%, 48%);
+}
+
+.content h1 {
+	font-size: 28px;
+}
+
+.content p {
+	font-size: 15px;
+	font-weight: 500;
+	color: hsl(228, 12%, 48%);
+}
+
+.price {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.price span:first-child {
+	color: hsl(158, 36%, 37%);
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.price span:nth-child(2) {
+	color: hsl(228, 12%, 48%);
+	text-decoration: line-through;
+}
+
+button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	padding: 14px;
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(158, 36%, 37%);
+	border: none;
+	border-radius: 10px;
+	font-weight: bold;
+}
+
+button:hover {
+	background-color: hsl(156, 44%, 19%);
+	cursor: pointer;
+}
+
+.attribution {
+	margin-bottom: 20px;
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		height: 100vh;
+	}
+
+	.card {
+		flex-direction: row;
+		width: 700px;
+	}
+
+	#product {
+		width: 50%;
+	}
+
+	.content {
+		width: 50%;
+		padding: 20px;
+	}
+
+	.attribution {
+		font-size: 14px;
+	}
+}
